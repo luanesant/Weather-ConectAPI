@@ -59,7 +59,7 @@ class ViewController: UIViewController {
                          hum: Int((posts.main?.humidity)!),
                          lat: (posts.coord?.lat)!,
                          lon:  (posts.coord?.lon)!,
-                         pressure: (posts.main?.pressure)!,
+                         pressure: Int((posts.main?.pressure)!),
                          velocity: (posts.wind?.speed)!,
                          temp: Int((posts.main?.temp)! - 273.15),
                          tempMax: Int((posts.main?.temp_max)! - 273.15),
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func nextView(nameCity: String ,hum: Int, lat: Double, lon: Double, pressure: Double, velocity: Double,temp: Int, tempMax: Int, tempMin: Int, direction: Int){
+    func nextView(nameCity: String ,hum: Int, lat: Double, lon: Double, pressure: Int, velocity: Double,temp: Int, tempMax: Int, tempMin: Int, direction: Int){
        
         let dataPassed = storyboard?.instantiateViewController(withIdentifier: "ShowDataViewController") as! ShowDataViewController
                 dataPassed.city = nameCity

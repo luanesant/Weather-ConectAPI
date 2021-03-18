@@ -64,7 +64,7 @@ class ShowDataViewController: UIViewController {
     
 //Variáveis que recebem os dados da API ao mudar de view
     var city: String = ""
-    var pressure: Double = 0.0000
+    var pressure: Int = 0
     var humidity: Int = 0
     var latitude: Double = 0.0000
     var longitude: Double = 0.0000
@@ -77,19 +77,21 @@ class ShowDataViewController: UIViewController {
        // fetchPost(name: city)
         
         super.viewDidLoad()
-      initComponents()
+        initComponents()
+        
+        let rightButton = UIBarButtonItem()
         
     }
     func initComponents(){
         cityFind.text = city
-        pressureLabel.text = String(pressure) + "hPa"
-        tempActualLabel.text = String(tempActual)
-        tempMinLabel.text = String(tempMin)
-        tempMaxLabel.text = String(tempMax)
+        pressureLabel.text = String(pressure) + " hPa"
+        tempActualLabel.text = String(tempActual) + "º"
+        tempMinLabel.text = "Mín.: " + String(tempMin) + "ºC"
+        tempMaxLabel.text = "Máx.: " + String(tempMax) + "ºC"
         latitudeLabel.text = String(latitude)
         longitudeLabel.text = String(longitude)
-        directionWindLabel.text = String(direction)
-        velocityWindLabel.text = String(velocity)
-        humidityLabel.text = String(humidity)
+        directionWindLabel.text = String(direction) + "º"
+        velocityWindLabel.text = String(velocity) + " Km/h"
+        humidityLabel.text = String(humidity) + "%"
     }
 }
