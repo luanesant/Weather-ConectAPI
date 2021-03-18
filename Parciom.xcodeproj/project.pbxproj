@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		318344EC2602E70000085284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318344EB2602E70000085284 /* AppDelegate.swift */; };
+		318344EE2602E70000085284 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318344ED2602E70000085284 /* SceneDelegate.swift */; };
+		318344F02602E70000085284 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318344EF2602E70000085284 /* ViewController.swift */; };
+		318344F32602E70000085284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318344F12602E70000085284 /* Main.storyboard */; };
+		318344F52602E70200085284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 318344F42602E70200085284 /* Assets.xcassets */; };
+		318344F82602E70200085284 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318344F62602E70200085284 /* LaunchScreen.storyboard */; };
+		318345032602E70200085284 /* ParciomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318345022602E70200085284 /* ParciomTests.swift */; };
+		3183450E2602E70200085284 /* ParciomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3183450D2602E70200085284 /* ParciomUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		318344FF2602E70200085284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 318344E02602E70000085284 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 318344E72602E70000085284;
+			remoteInfo = Parciom;
+		};
+		3183450A2602E70200085284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 318344E02602E70000085284 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 318344E72602E70000085284;
+			remoteInfo = Parciom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		318344E82602E70000085284 /* Parciom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parciom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		318344EB2602E70000085284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		318344ED2602E70000085284 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		318344EF2602E70000085284 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		318344F22602E70000085284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		318344F42602E70200085284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		318344F72602E70200085284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		318344F92602E70200085284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		318344FE2602E70200085284 /* ParciomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParciomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		318345022602E70200085284 /* ParciomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParciomTests.swift; sourceTree = "<group>"; };
+		318345042602E70200085284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		318345092602E70200085284 /* ParciomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParciomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3183450D2602E70200085284 /* ParciomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParciomUITests.swift; sourceTree = "<group>"; };
+		3183450F2602E70200085284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		318344E52602E70000085284 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		318344FB2602E70200085284 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		318345062602E70200085284 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		318344DF2602E70000085284 = {
+			isa = PBXGroup;
+			children = (
+				318344EA2602E70000085284 /* Parciom */,
+				318345012602E70200085284 /* ParciomTests */,
+				3183450C2602E70200085284 /* ParciomUITests */,
+				318344E92602E70000085284 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		318344E92602E70000085284 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				318344E82602E70000085284 /* Parciom.app */,
+				318344FE2602E70200085284 /* ParciomTests.xctest */,
+				318345092602E70200085284 /* ParciomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		318344EA2602E70000085284 /* Parciom */ = {
+			isa = PBXGroup;
+			children = (
+				318344EB2602E70000085284 /* AppDelegate.swift */,
+				318344ED2602E70000085284 /* SceneDelegate.swift */,
+				318344EF2602E70000085284 /* ViewController.swift */,
+				318344F12602E70000085284 /* Main.storyboard */,
+				318344F42602E70200085284 /* Assets.xcassets */,
+				318344F62602E70200085284 /* LaunchScreen.storyboard */,
+				318344F92602E70200085284 /* Info.plist */,
+			);
+			path = Parciom;
+			sourceTree = "<group>";
+		};
+		318345012602E70200085284 /* ParciomTests */ = {
+			isa = PBXGroup;
+			children = (
+				318345022602E70200085284 /* ParciomTests.swift */,
+				318345042602E70200085284 /* Info.plist */,
+			);
+			path = ParciomTests;
+			sourceTree = "<group>";
+		};
+		3183450C2602E70200085284 /* ParciomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3183450D2602E70200085284 /* ParciomUITests.swift */,
+				3183450F2602E70200085284 /* Info.plist */,
+			);
+			path = ParciomUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		318344E72602E70000085284 /* Parciom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 318345122602E70200085284 /* Build configuration list for PBXNativeTarget "Parciom" */;
+			buildPhases = (
+				318344E42602E70000085284 /* Sources */,
+				318344E52602E70000085284 /* Frameworks */,
+				318344E62602E70000085284 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Parciom;
+			productName = Parciom;
+			productReference = 318344E82602E70000085284 /* Parciom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		318344FD2602E70200085284 /* ParciomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 318345152602E70200085284 /* Build configuration list for PBXNativeTarget "ParciomTests" */;
+			buildPhases = (
+				318344FA2602E70200085284 /* Sources */,
+				318344FB2602E70200085284 /* Frameworks */,
+				318344FC2602E70200085284 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				318345002602E70200085284 /* PBXTargetDependency */,
+			);
+			name = ParciomTests;
+			productName = ParciomTests;
+			productReference = 318344FE2602E70200085284 /* ParciomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		318345082602E70200085284 /* ParciomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 318345182602E70200085284 /* Build configuration list for PBXNativeTarget "ParciomUITests" */;
+			buildPhases = (
+				318345052602E70200085284 /* Sources */,
+				318345062602E70200085284 /* Frameworks */,
+				318345072602E70200085284 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3183450B2602E70200085284 /* PBXTargetDependency */,
+			);
+			name = ParciomUITests;
+			productName = ParciomUITests;
+			productReference = 318345092602E70200085284 /* ParciomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		318344E02602E70000085284 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					318344E72602E70000085284 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					318344FD2602E70200085284 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 318344E72602E70000085284;
+					};
+					318345082602E70200085284 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 318344E72602E70000085284;
+					};
+				};
+			};
+			buildConfigurationList = 318344E32602E70000085284 /* Build configuration list for PBXProject "Parciom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 318344DF2602E70000085284;
+			productRefGroup = 318344E92602E70000085284 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				318344E72602E70000085284 /* Parciom */,
+				318344FD2602E70200085284 /* ParciomTests */,
+				318345082602E70200085284 /* ParciomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		318344E62602E70000085284 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318344F82602E70200085284 /* LaunchScreen.storyboard in Resources */,
+				318344F52602E70200085284 /* Assets.xcassets in Resources */,
+				318344F32602E70000085284 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		318344FC2602E70200085284 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		318345072602E70200085284 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		318344E42602E70000085284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318344F02602E70000085284 /* ViewController.swift in Sources */,
+				318344EC2602E70000085284 /* AppDelegate.swift in Sources */,
+				318344EE2602E70000085284 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		318344FA2602E70200085284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318345032602E70200085284 /* ParciomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		318345052602E70200085284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3183450E2602E70200085284 /* ParciomUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		318345002602E70200085284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 318344E72602E70000085284 /* Parciom */;
+			targetProxy = 318344FF2602E70200085284 /* PBXContainerItemProxy */;
+		};
+		3183450B2602E70200085284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 318344E72602E70000085284 /* Parciom */;
+			targetProxy = 3183450A2602E70200085284 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		318344F12602E70000085284 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				318344F22602E70000085284 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		318344F62602E70200085284 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				318344F72602E70200085284 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		318345102602E70200085284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		318345112602E70200085284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		318345132602E70200085284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSZ6N6FL5G;
+				INFOPLIST_FILE = Parciom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luanesantos.Parciom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		318345142602E70200085284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSZ6N6FL5G;
+				INFOPLIST_FILE = Parciom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luanesantos.Parciom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		318345162602E70200085284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSZ6N6FL5G;
+				INFOPLIST_FILE = ParciomTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luanesantos.ParciomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parciom.app/Parciom";
+			};
+			name = Debug;
+		};
+		318345172602E70200085284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSZ6N6FL5G;
+				INFOPLIST_FILE = ParciomTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luanesantos.ParciomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parciom.app/Parciom";
+			};
+			name = Release;
+		};
+		318345192602E70200085284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSZ6N6FL5G;
+				INFOPLIST_FILE = ParciomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luanesantos.ParciomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Parciom;
+			};
+			name = Debug;
+		};
+		3183451A2602E70200085284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSZ6N6FL5G;
+				INFOPLIST_FILE = ParciomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luanesantos.ParciomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Parciom;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		318344E32602E70000085284 /* Build configuration list for PBXProject "Parciom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				318345102602E70200085284 /* Debug */,
+				318345112602E70200085284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		318345122602E70200085284 /* Build configuration list for PBXNativeTarget "Parciom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				318345132602E70200085284 /* Debug */,
+				318345142602E70200085284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		318345152602E70200085284 /* Build configuration list for PBXNativeTarget "ParciomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				318345162602E70200085284 /* Debug */,
+				318345172602E70200085284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		318345182602E70200085284 /* Build configuration list for PBXNativeTarget "ParciomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				318345192602E70200085284 /* Debug */,
+				3183451A2602E70200085284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 318344E02602E70000085284 /* Project object */;
+}
