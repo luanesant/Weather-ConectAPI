@@ -7,47 +7,6 @@
 
 import UIKit
 
-//Strings que recebem os dados do JSON
-
-//
-//
-//class Service: NSObject{
-//    static let shared = Service()
-//    let headers = [
-//        "x-rapidapi-key": "264eb1e1c9msh474f4ad4823ab46p14a89djsne825bf95669b",
-//        "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com"
-//    ]
-//
-//    func fetchPost( city: String,completion: @escaping (Result<CityData,Error>)->()){
-//        let request = NSMutableURLRequest(url: NSURL(string: "https://community-open-weather-map.p.rapidapi.com/weather?q=\(city)&mode=xml%2C%20html")! as URL,
-//                                                cachePolicy: .useProtocolCachePolicy,
-//                                            timeoutInterval: 10.0)
-//        request.httpMethod = "GET"
-//        request.allHTTPHeaderFields = headers
-//
-//        URLSession.shared.dataTask(with: request as URLRequest){ (data, response, error) in
-//            DispatchQueue.main.async {
-//                if error != nil {
-//                    return
-//                }
-//                    do{
-//                        let posts = try JSONDecoder().decode(CityData.self, from: data!)
-//                        completion(.success(posts))
-//
-//
-//                    }catch{
-//                        completion(.failure(error))
-//                   //     print("Error parsing JSON: \(error)")
-//                }
-//            }
-//
-//        }.resume()
-//
-//
-//    }
-//
-//}
-
 class ShowDataViewController: UIViewController {
 //Labels dos dados da cidade
     @IBOutlet weak var cityFind: UILabel!
@@ -74,14 +33,36 @@ class ShowDataViewController: UIViewController {
     var tempMin: Int = 0
     var tempMax: Int = 0
     override func viewDidLoad() {
-       // fetchPost(name: city)
         
         super.viewDidLoad()
+        
         initComponents()
         
-        let rightButton = UIBarButtonItem()
-        
     }
+    //Ação do botão compartilhar
+    @IBAction func shareButton(_ sender: Any) {
+                let share = [ """
+         Aviso dos Surfista a localização: longitude: \(latitudeLabel.text!) e latitude: \(latitudeLabel.text!), de nome \(cityFind.text!) se encontra em ótimas condições. Veja abaixo:
+
+            Temperatura Atual: \(tempActualLabel.text!)
+            Temperatura \(tempMaxLabel.text!)
+            Temperatura \(tempMinLabel.text!)
+            Umidade: \(humidityLabel.text!)
+
+        E se você quiser velejar, veja as condições:
+            Velocidade do vento: \(velocityWindLabel.text!)
+            Direção do Vento: \(directionWindLabel.text!)
+
+
+        Não Perde a chance e vem voando pra cá!!!!!!!
+        """]
+        //chamada do modal de compartilhamento
+                let activityController = UIActivityViewController(activityItems: share, applicationActivities: nil)
+                activityController.popoverPresentationController?.sourceView = self.view
+                activityController.excludedActivityTypes = [UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToTwitter,UIActivity.ActivityType.postToFacebook]
+                self.present(activityController, animated: true, completion: nil)
+    }
+    //Inicialização de componentes
     func initComponents(){
         cityFind.text = city
         pressureLabel.text = String(pressure) + " hPa"
@@ -94,4 +75,6 @@ class ShowDataViewController: UIViewController {
         velocityWindLabel.text = String(velocity) + " Km/h"
         humidityLabel.text = String(humidity) + "%"
     }
+    
+    
 }

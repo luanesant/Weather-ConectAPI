@@ -9,7 +9,7 @@ import Foundation
 class Service: NSObject{
     static let shared = Service()
     
-    //Mude aqui sua chave!! ˆ-ˆ
+    //Mude aqui sua chave!! ˆ-ˆ 🔑
     let headers = [
         "x-rapidapi-key": "264eb1e1c9msh474f4ad4823ab46p14a89djsne825bf95669b",
         "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com"

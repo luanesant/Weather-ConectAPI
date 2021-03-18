@@ -18,9 +18,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-   
+    
     @IBAction func searchText(_ sender: Any) {
         
         guard !((citySearch.text ?? "" ).isEmpty) else {
@@ -35,6 +34,9 @@ class ViewController: UIViewController {
         fetchPost(name: trim)
     }
     
+    
+//Funções
+    //Função que faz a chamada de conexão com a API
      func fetchPost(name: String){
         //Chama a classe Service declarada em Service.swift
         Service.shared.fetchPost(city: name){ [self] (res) in
@@ -70,7 +72,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+    //Função que passsa por parâmetros os dados vindos da API para a View de Consultas 
     func nextView(nameCity: String ,hum: Int, lat: Double, lon: Double, pressure: Int, velocity: Double,temp: Int, tempMax: Int, tempMin: Int, direction: Int){
        
         let dataPassed = storyboard?.instantiateViewController(withIdentifier: "ShowDataViewController") as! ShowDataViewController
@@ -85,6 +87,7 @@ class ViewController: UIViewController {
                 dataPassed.tempMax = tempMax
                 dataPassed.direction = direction
             citySearch.text = ""
+        
         navigationController?.pushViewController(dataPassed, animated: true)
         
     }
