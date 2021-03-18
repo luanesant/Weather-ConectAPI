@@ -39,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		311430C3260389D600FA935D /* ShowDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDataViewController.swift; sourceTree = "<group>"; };
-		3139C18A2603C55B001DF8E3 /* NewYorkSmall-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NewYorkSmall-Semibold.otf"; path = "../../../../Past/AppSaude/AppSaude/view/fontes/NewYorkSmall-Semibold.otf"; sourceTree = "<group>"; };
 		3139C1942603D8E7001DF8E3 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		318344E82602E70000085284 /* Parciom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parciom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		318344EB2602E70000085284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +95,6 @@
 		3139C1782603C1E2001DF8E3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3139C17D2603C464001DF8E3 /* Fonts */,
 				318344F12602E70000085284 /* Main.storyboard */,
 				318344F42602E70200085284 /* Assets.xcassets */,
 				318344F62602E70200085284 /* LaunchScreen.storyboard */,
@@ -112,14 +110,6 @@
 				3139C1942603D8E7001DF8E3 /* Service.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		3139C17D2603C464001DF8E3 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				3139C18A2603C55B001DF8E3 /* NewYorkSmall-Semibold.otf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		318344DF2602E70000085284 = {
