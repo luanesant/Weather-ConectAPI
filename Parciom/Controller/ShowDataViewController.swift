@@ -32,6 +32,7 @@ class ShowDataViewController: UIViewController {
     var tempActual: Int = 0
     var tempMin: Int = 0
     var tempMax: Int = 0
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -41,6 +42,7 @@ class ShowDataViewController: UIViewController {
     }
     //Ação do botão compartilhar
     @IBAction func shareButton(_ sender: Any) {
+        //texto de Compartilhamento
                 let share = [ """
          Aviso dos Surfista a localização: longitude: \(latitudeLabel.text!) e latitude: \(latitudeLabel.text!), de nome \(cityFind.text!) se encontra em ótimas condições. Veja abaixo:
 
@@ -55,11 +57,18 @@ class ShowDataViewController: UIViewController {
 
 
         Não Perde a chance e vem voando pra cá!!!!!!!
-        """]
+        """
+        ]
         //chamada do modal de compartilhamento
-                let activityController = UIActivityViewController(activityItems: share, applicationActivities: nil)
+         let activityController = UIActivityViewController(activityItems: share, applicationActivities: nil)
                 activityController.popoverPresentationController?.sourceView = self.view
-                activityController.excludedActivityTypes = [UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToTwitter,UIActivity.ActivityType.postToFacebook]
+        
+                activityController.excludedActivityTypes = [
+                    UIActivity.ActivityType.airDrop,
+                    UIActivity.ActivityType.postToTwitter,
+                    UIActivity.ActivityType.postToFacebook
+                ]
+        
                 self.present(activityController, animated: true, completion: nil)
     }
     //Inicialização de componentes
@@ -74,6 +83,7 @@ class ShowDataViewController: UIViewController {
         directionWindLabel.text = String(direction) + "º"
         velocityWindLabel.text = String(velocity) + " Km/h"
         humidityLabel.text = String(humidity) + "%"
+
     }
     
     

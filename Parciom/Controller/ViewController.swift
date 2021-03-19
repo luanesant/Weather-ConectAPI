@@ -7,31 +7,47 @@
 
 import UIKit
 
-
-
-
 class ViewController: UIViewController {
     
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var citySearch: UITextField!
 
-    
+    let alert = UIAlertController(title: "Carregando Dados", message: "Espere um instante", preferredStyle: UIAlertController.Style.alert)
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func searchText(_ sender: Any) {
         
-        guard !((citySearch.text ?? "" ).isEmpty) else {
-            let alert = UIAlertController(title: "Erro", message: "Por Favor, digite o nome de uma cidade para a consulta!", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        guard !((citySearch.text ?? "" ).isEmpty)
+            else {
+                let alert = UIAlertController(title: "Erro", message: "Por Favor, digite o nome de uma cidade para a consulta!",
+                                          preferredStyle: UIAlertController.Style.alert
+                    )
+                alert.addAction(
+                        UIAlertAction(title: "Ok", style: UIAlertAction.Style.default,
+                                          handler: nil
+                    )
+                )
             self.present(alert, animated: true, completion: nil)
             return
         }
+        
+            alert.view.tintColor = UIColor.gray
+        
+        let updatingData: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50)) as UIActivityIndicatorView
+                updatingData.hidesWhenStopped = true
+                updatingData.style = UIActivityIndicatorView.Style.medium
+                updatingData.startAnimating();
+        alert.view.addSubview(updatingData)
+        self.present(alert, animated: true, completion: nil)
         let trim = citySearch.text!.replacingOccurrences(of: " ", with: "%20")
       
         //Chamada para pegar os dados da API
         fetchPost(name: trim)
+        
+        
     }
     
     
@@ -72,9 +88,9 @@ class ViewController: UIViewController {
             }
         }
     }
-    //Função que passsa por parâmetros os dados vindos da API para a View de Consultas 
+  
+//Função que passsa por parâmetros os dados vindos da API para a View de Consultas
     func nextView(nameCity: String ,hum: Int, lat: Double, lon: Double, pressure: Int, velocity: Double,temp: Int, tempMax: Int, tempMin: Int, direction: Int){
-       
         let dataPassed = storyboard?.instantiateViewController(withIdentifier: "ShowDataViewController") as! ShowDataViewController
                 dataPassed.city = nameCity
                 dataPassed.pressure = pressure
@@ -89,7 +105,8 @@ class ViewController: UIViewController {
             citySearch.text = ""
         
         navigationController?.pushViewController(dataPassed, animated: true)
-        
+        self.dismiss(animated: false, completion: nil)
+
     }
 }
 
