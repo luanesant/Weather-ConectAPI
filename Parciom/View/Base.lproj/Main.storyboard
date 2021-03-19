@@ -17,29 +17,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud.sun" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Fv-Sf-4xm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.sun" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Fv-Sf-4xm">
                                 <rect key="frame" x="11" y="256" width="106" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sun.haze" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DhW-Ey-baj">
-                                <rect key="frame" x="157" y="381.5" width="89" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103.5" id="DCZ-nb-GxN"/>
+                                </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cidade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X9b-K6-JUK">
-                                <rect key="frame" x="11" y="313" width="392.5" height="34"/>
+                                <rect key="frame" x="11" y="313" width="373" height="34"/>
                                 <color key="backgroundColor" name="otherComp"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="328" id="g3g-xx-oJi"/>
-                                    <constraint firstAttribute="height" constant="34" id="wNy-ld-Smm"/>
+                                    <constraint firstAttribute="height" constant="34" id="AJe-Gh-25a"/>
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather League " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWS-kG-heL">
+                                <rect key="frame" x="11" y="117" width="392.5" height="140"/>
+                                <color key="backgroundColor" name="blueBackground"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="48"/>
+                                <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NHw-EW-6va">
+                                <rect key="frame" x="308" y="267.5" width="106" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H00-EK-eQY">
-                                <rect key="frame" x="132" y="420" width="139" height="68"/>
+                                <rect key="frame" x="137" y="420" width="134" height="68"/>
                                 <color key="backgroundColor" name="blueClearBackground"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="8W0-83-B7d"/>
@@ -56,31 +64,22 @@
                                     <action selector="searchText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fgR-K2-x50"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather League " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWS-kG-heL">
-                                <rect key="frame" x="11" y="117" width="392.5" height="140"/>
-                                <color key="backgroundColor" name="blueBackground"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="48"/>
-                                <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NHw-EW-6va">
-                                <rect key="frame" x="308" y="267.5" width="106" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="blueBackground"/>
                         <constraints>
-                            <constraint firstItem="H00-EK-eQY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="1Ya-iz-rvc"/>
+                            <constraint firstItem="X9b-K6-JUK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="313" id="3v1-zk-2Te"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X9b-K6-JUK" secondAttribute="trailing" constant="30" id="8EU-8x-Te9"/>
                             <constraint firstItem="VWS-kG-heL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9iO-dh-khC"/>
-                            <constraint firstItem="H00-EK-eQY" firstAttribute="top" secondItem="X9b-K6-JUK" secondAttribute="bottom" constant="73" id="EkI-qe-LOd"/>
+                            <constraint firstItem="H00-EK-eQY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="IbF-Ua-2FW"/>
                             <constraint firstItem="VWS-kG-heL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="JbH-Lt-umf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H00-EK-eQY" secondAttribute="trailing" constant="143" id="bgw-n2-A7n"/>
-                            <constraint firstItem="X9b-K6-JUK" firstAttribute="trailing" secondItem="VWS-kG-heL" secondAttribute="trailing" id="g1c-hL-8ZG"/>
+                            <constraint firstItem="X9b-K6-JUK" firstAttribute="leading" secondItem="8Fv-Sf-4xm" secondAttribute="leading" id="RJO-Wj-duB"/>
+                            <constraint firstItem="8Fv-Sf-4xm" firstAttribute="top" secondItem="VWS-kG-heL" secondAttribute="bottom" constant="0.5" id="Uha-ol-lwC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Fv-Sf-4xm" secondAttribute="bottom" constant="525.5" id="Zi8-Xi-uF0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="H00-EK-eQY" secondAttribute="trailing" id="bgw-n2-A7n"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="H00-EK-eQY" secondAttribute="bottom" constant="374" id="gfl-Mo-AlS"/>
-                            <constraint firstItem="X9b-K6-JUK" firstAttribute="leading" secondItem="VWS-kG-heL" secondAttribute="leading" id="kZd-uD-Vls"/>
-                            <constraint firstItem="X9b-K6-JUK" firstAttribute="top" secondItem="VWS-kG-heL" secondAttribute="bottom" constant="56" id="rxa-eF-ZvZ"/>
+                            <constraint firstItem="X9b-K6-JUK" firstAttribute="top" secondItem="VWS-kG-heL" secondAttribute="bottom" constant="56" id="iu1-o6-1QD"/>
+                            <constraint firstItem="X9b-K6-JUK" firstAttribute="leading" secondItem="VWS-kG-heL" secondAttribute="leading" id="zHe-EZ-VgT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dCv-7w-Aok"/>
@@ -370,7 +369,6 @@
         <image name="cloud.sun" catalog="system" width="128" height="93"/>
         <image name="smoke" catalog="system" width="128" height="93"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
-        <image name="sun.haze" catalog="system" width="128" height="119"/>
         <image name="tornado" catalog="system" width="118" height="128"/>
         <image name="wind" catalog="system" width="128" height="101"/>
         <namedColor name="blueBackground">
