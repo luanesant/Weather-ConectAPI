@@ -60,6 +60,7 @@ class ViewController: UIViewController {
             //Caso haja erro de conexão
              case
                 .failure(let error):
+                self.dismiss(animated: false, completion: nil)
                 
                 let alert = UIAlertController(title: "Falha na Consulta", message: "Esta cidade não esta em nosso sistema. Desculpe!", preferredStyle: UIAlertController.Style.alert)
                 
